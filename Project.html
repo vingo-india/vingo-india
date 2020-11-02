@@ -16,6 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 </head>
 
 <style>
@@ -23,6 +25,36 @@
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 .mySlides {display:none;}
+.image{
+    margin-right:20px;
+    margin-left:28px;
+    position:relative;
+    overflow:hidden;
+}
+.add-cart{
+    position:absolute;
+    width:100%;
+    background-color: dark-grey;
+    transition:all 0.3s ease-in-out;
+    opacity:0;
+    cursor:pointer;
+    text-align:center;
+
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6{
+    bottom: 50px;
+    opacity:1;
+    padding:10px;
+    text-decoration:none;
+}
+
+
 </style>
 
 
@@ -37,7 +69,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <a class="navbar-brand">
     <img src="vingo.jpg" alt="Logo" style="width:200px;">
   </a>
-  <form align="center" class="form-inline" action="/action_page.php">
+  <form align ="center" class="form-inline" action="/action_page.php">
   <input class="form-control mr-sm-2" type="text" placeholder="Search">
   <button class="btn btn-primary" type="submit">Search</button>
   </form>
@@ -49,6 +81,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </li>
     <li class="nav-item">
       <a class="nav-link" href="Contact.html">Contact Us</a>
+    </li>
+    <li class="nav-item">
+      <li class="cart">
+      <a class="nav-link" href="cart.html"><ion-icon name="basket"></ion-icon>Cart<span>0</span>
+      </a>
+      </li>
     </li>
   </ul>
 </nav>
@@ -134,61 +172,81 @@ function carousel() {
   <div class="w3-row">
     <div class="w3-col l3 s6">
       <div class="w3-container">
+        <div class="image">
         <img src="Lower1.jpg" style="width:100%">
+       
+
         <p><br><b>$24.99</b></p>
-      </div>
+        <a class="add-cart cart2" href="#" >Add Cart</a>
+      </div></div>
       <div class="w3-container">
+        <div class="image">
         <img src="Lower2.jpg" style="width:100%">
         <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
+        <a class="add-cart cart1" href="#">Add Cart</a>
+      </div></div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
         <div class="w3-display-container">
+          <div class="image">
           <img src="Lower3.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">New</span>
           <div class="w3-display-middle w3-display-hover">
             <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
+            <p></p>
+            <a class="add-cart cart2" href="#" >Add Cart</a>
+          </div></div>
+        
+        <p>Ripped Jeans<br><b>$19.99</b></p>
+      </div></div>
       <div class="w3-container">
+        <div class="image">
         <img src="Lower4.jpg" style="width:100%">
         <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+        <a class="add-cart cart3" href="#" >Add Cart</a>
+      </div>
       </div>
     </div>
 
     <div class="w3-col l3 s6">
       <div class="w3-container">
+        <div class="image">
         <img src="Lower5.jpg" style="width:100%">
-        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
-      </div>
+        <p>Skinny Jeans<br><b>$20.50</b></p>
+        <a class="add-cart cart4" href="#" >Add Cart</a>
+      </div></div>
       <div class="w3-container">
         <div class="w3-display-container">
+          <div class="image">
           <img src="Lower6.jpg" style="width:100%">
           <span class="w3-tag w3-display-topleft">Sale</span>
           <div class="w3-display-middle w3-display-hover">
             <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
+          </div></div>
         </div>
         <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+        <a class="add-cart cart5" href="#" >Add Cart</a>
+        
       </div>
     </div>
-
+  
     <div class="w3-col l3 s6">
       <div class="w3-container">
+        <div class="image">
         <img src="Lower7.jpg" style="width:100%">
-        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
-      </div>
+        <p>Vin Skinny Jeans<br><b>$14.99</b></p>
+        <a class="add-cart cart6" href="#" >Add Cart</a>
+      </div></div>
       <div class="w3-container">
-        <img src="Tshirt1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
+        <div class="image">
+        <img src="Lower7.png" style="width:100%">
+        <p>Jeans<br><b>$24.99</b></p>
+        <a class="add-cart cart7" href="#" >Add Cart</a>
+      </div></div>
     </div>
   </div>
-
   <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
     <h1>Subscribe</h1>
@@ -288,8 +346,10 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 </script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<script src="main.js"></script>
 
 
 </body>
-
+</body>
 </html>
